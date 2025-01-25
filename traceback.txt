@@ -1,19 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/characters.rpy", line 10, in script
-    image blue upset = ""
+Compiling ATL code at game/characters.rpy:14
+  File "game/script.rpy", line 8, in script
+    show blue neutral at left
 Exception: An empty string cannot be used as a displayable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/characters.rpy", line 10, in script
-    image blue upset = ""
-  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.image(self.imgname, img)
-  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/exports/displayexports.py", line 73, in image
-    d = renpy.easy.displayable(d)
+  File "game/script.rpy", line 8, in script
+    show blue neutral at left
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 1117, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 1080, in show_imspec
+    renpy.config.show(name,
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/exports/displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/display/transform.py", line 1194, in _duplicate
+    rv.take_execution_state(self)
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/atl.py", line 551, in take_execution_state
+    block = self.compile()
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/atl.py", line 723, in compile
+    block = self.atl.compile(self.context)
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/atl.py", line 925, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/atl.py", line 925, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/atl.py", line 1241, in compile
+    child = renpy.easy.displayable(child)
   File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/easy.py", line 117, in displayable
     raise Exception("An empty string cannot be used as a displayable.")
 Exception: An empty string cannot be used as a displayable.
@@ -21,4 +37,4 @@ Exception: An empty string cannot be used as a displayable.
 macOS-14.6.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Drowning in bubbles 1.0
-Fri Jan 24 23:45:03 2025
+Sat Jan 25 13:53:56 2025
