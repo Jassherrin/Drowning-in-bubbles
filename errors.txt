@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 13: expected 'simple_expression' not found.
-    pause
-         ^
+File "game/chap2.rpy", line 15: expected statement.
+    Hide blue confused
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat Jan 25 13:51:28 2025
+Sat Jan 25 18:55:34 2025
