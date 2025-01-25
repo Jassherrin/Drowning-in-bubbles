@@ -6,7 +6,7 @@
     scene bg river with dissolve 
     "2.36pm. Two friends walking by a river."
 
-    show blue sad at left with dissolve
+    show blue upset at left with dissolve
     blue "This heat is too much."
     show micah neutral at right with moveinright
     micah "Yeah. The river looks refreshing though."
@@ -16,7 +16,8 @@
     micah "So much for a sweet walk by the river. This would be nicer if you stopped groaning."
     blue "..."
     micah "..."
-    blue "I want to jump in the river..."
+    show blue neutral
+    blue "I want to jump in the river!"
     micah "*Sighs*"
     blue "It's too hotpot!"
     micah "You suggested this!"
@@ -89,6 +90,8 @@
             show waterMon at right with zoomin
             blue "WHAT THE -?!!"
             call waterMonFight
+            if (blue_hp < 1):
+                jump game_over
             blue "..."
             blue "I should head home before more of those things appear."
             jump c2

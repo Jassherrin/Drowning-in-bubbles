@@ -1,7 +1,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define blue = Character("Blue", color="#75aeff")
-define micah = Character("Micah", color="#ffa7ff")
+define blue = Character("Blue", color="#00285f")
+define micah = Character("Micah", color="#700000")
 define q = Character("???", color="#c9c9c9")
 define aq = Character("???", color="#f2a654")
 
@@ -14,10 +14,30 @@ image blue neutral:
      "Blue neutral half blink.png"
      pause 0.5
      repeat
-image blue upset ="Blue sad.png"
-image blue happy = "Blue happy.png"
-image blue confused = "Blue confused.png"
-image blue swim h = "Blue swim happy.png"
+image blue upset:
+     "Blue sad.png"
+     pause 1.0
+     "Blue sad blink.png"
+     pause 0.5
+     repeat
+image blue happy:
+     "Blue happy.png"
+     pause 1.0
+     "Blue happy blink.png"
+     pause 0.5
+     repeat
+image blue confused:
+     "Blue confused.png"
+     pause 1.0
+     "Blue confused blink.png"
+     pause 0.5
+     repeat
+image blue swim h:
+     "Blue swim happy.png"
+     pause 1.0
+     "Blue swim happy blink.png"
+     pause 0.5
+     repeat
 image blue swim u = "Blue swim shock.png"
 
 default blue_hp = 100
@@ -25,11 +45,36 @@ default blue_hp = 100
 
 
 #Micah
-image micah neutral = "Micah neutral.png"
-image micah upset = "Micah sad.png"
-image micah happy = "Micah happy.png"
-image micah enraged = "Micah enraged.png"
-image micah swim e = "Micah swim enraged.png"
+image micah neutral:
+     "Micah neutral.png"
+     pause 1.0
+     "Micah neutral blink.png"
+     pause 0.5
+     repeat
+image micah upset:
+     "Micah sad.png"
+     pause 1.0
+     "Micah sad blink.png"
+     pause 0.5
+     repeat
+image micah happy:
+     "Micah happy.png"
+     pause 1.0
+     "Micah happy blink.png"
+     pause 0.5
+     repeat
+image micah enraged:
+     "Micah enraged.png"
+     pause 1.0
+     "Micah enraged blink.png"
+     pause 0.5
+     repeat
+image micah swim e:
+     "Micah swim enraged.png"
+     pause 1.0
+     "Micah swim enraged blink.png"
+     pause 0.5
+     repeat
 
 #Water Monster
 image waterMon = "Water monster.png"

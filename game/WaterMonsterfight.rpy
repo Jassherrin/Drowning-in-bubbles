@@ -1,5 +1,5 @@
 label waterMonFight:
-    "Water Bubble Monster is attacking! Prepare to fight!"
+    "Water Bubble Monster is attacking! Prepare to fight!\nWater Monster's HP: [wmHp] \nBlue's HP: [blue_hp]"
     while wmHp > 0:
         if (blue_hp > 0):
             menu:
@@ -34,9 +34,9 @@ label waterMonFight:
                     "Water Monster's HP: [wmHp] \nBlue's HP: [blue_hp] \n..."
                     "..."
                     show waterMon
-        else:
-            "Blue died!"
+        elif (blue_hp < 1):
             return
+    
     show waterMon dead
     "...\nCongratulations!"
     hide waterMon
@@ -44,4 +44,10 @@ label waterMonFight:
     $ blue_hp = 100
     $ wmHp = 50
     "Blue won!"
-    "HP fully restored!"
+    #"HP fully restored!" It's better to have hp carry over? maybe reset is better?
+
+label game_over:
+    "Blue was defeated!"
+    scene game over 
+    pause 1.5
+    jump selfcredits

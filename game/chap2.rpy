@@ -8,7 +8,9 @@ label c2:
     show waterMon at right with zoomin
     blue "Not again!"
     call waterMonFight
-    blue "What is going on? I don't understand..." 
+    if (blue_hp < 1):
+        jump game_over
+    blue "What is going on? I don't understand!"
 
     "What should Blue do?"
 
@@ -23,7 +25,7 @@ label c2:
             "These strange water bubble monsters attacked me after you left and I'm really scared."
             "Sent."
             "Blue knew it could have done without the last line but it did feel better to get it out."
-            "Water bubble monsters..."
+            "Water bubble monsters. Something that now exists."
             "Ding!"
             micah "Honestly, these water bubble monsters you mention as well as ur lack of time awareness is concerning."
             micah "But I need time to process tdy."
@@ -31,17 +33,29 @@ label c2:
             blue "It was really an accident. If I knew you were in danger, I would have saved you. Promise!"
             micah "But you didn't! u know what? I'm too tired for this. Let's talk tmr."
             blue "kay. TTYL."
-            show blue upset
+            show blue upset at left with dissolve
             blue "I hurt my best friend. I'm an awful person."
+            blue "I'm so tired. I should head to bed."
+            hide blue upset
+            scene bg blue room with fade 
+            show blue neutral at left with moveinright
+            blue "Good Morning Sweet Day!"
+            blue "Yesterday was-"
+            show blue upset
+            blue "Oh. Right."
+            hide blue upset 
+
             jump c3
             #Good path
+
+
         "Beg Micah for forgiveness":
             hide blue confused
             "You're my best friend Micah! I'm really sorry for what happened earlier."
             "Please forgive me"
             "Please"
             "Please"
-            "IK I was an awful fried kay?"
+            "IK I was an awful friend kay?"
             "Just please forgive me?"
             "Hey?"
             "Hello?"
@@ -64,6 +78,8 @@ label c2:
             blue "I can do this on my own anyways."
             jump c2bad
             #Bad end
+
+
         "Try and figure out on your own":
             jump c2bad
             #Bad end
