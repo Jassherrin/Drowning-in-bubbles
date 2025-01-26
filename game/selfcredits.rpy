@@ -1,4 +1,4 @@
 label selfcredits:
-
-
-    return
+    scene credits with fade
+    pause 5.0
+    return 

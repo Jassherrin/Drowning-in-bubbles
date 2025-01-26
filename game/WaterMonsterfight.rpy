@@ -34,19 +34,22 @@ label waterMonFight:
                     "Water Monster's HP: [wmHp] \nBlue's HP: [blue_hp] \n..."
                     "..."
                     show waterMon
-        elif (blue_hp < 1):
+        elif (blue_hp <= 0):
             return
     
     show waterMon dead
     "...\nCongratulations!"
     hide waterMon
     
-    $ blue_hp = 100
+    $ blue_hp = 100  # Reset HP
     $ wmHp = 50
     "Blue won!"
-    #"HP fully restored!" It's better to have hp carry over? maybe reset is better?
+    return
+
 
 label game_over:
+    stop voice
+    play music "Game_Over.mp3" loop
     "Blue was defeated!"
     scene game over 
     pause 1.5

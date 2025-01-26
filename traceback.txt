@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 92, in script call
-    call waterMonFight
-  File "game/WaterMonsterfight.rpy", line 3, in script
-    while wmHp > 0:
-Exception: Possible infinite loop.
+  File "game/chap5.rpy", line 44, in script
+    Micah "Heh!"
+Exception: Sayer 'Micah' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 92, in script call
-    call waterMonFight
-  File "game/WaterMonsterfight.rpy", line 3, in script
-    while wmHp > 0:
-  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/execution.py", line 61, in check_infinite_loop
-    raise Exception("Possible infinite loop.")
-Exception: Possible infinite loop.
+  File "game/chap5.rpy", line 44, in script
+    Micah "Heh!"
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
+    Say.execute(self)
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 581, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/jassherrin/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 470, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Micah' is not defined.
 
 macOS-14.6.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Drowning in bubbles 1.0
-Sun Jan 26 00:57:39 2025
+Sun Jan 26 06:47:43 2025

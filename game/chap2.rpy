@@ -1,8 +1,8 @@
 label c2:
     stop voice
     play music "Blue.wav" loop
-    scene bg blue room with dissolve 
-    show blue confused at left with dissolve
+    scene bg blue room with fade 
+    show blue confused at left with fade
     "Blue thought that coming home would help."
     "However..."
     show waterMon at right with zoomin
@@ -17,12 +17,12 @@ label c2:
     menu:
         "Message Micah an apology and explain that you don't understand what's going on and about the strange Water Bubble Monsters":
             hide blue confused
-            "Hey Micah, I know what I did earlier was terrible."
-            "I still don't really get everything that happened."
-            "I didn't realize so much time had passed and I genuinely did not hear you calling for me."
-            "It must have been a really dangerous situation to be stuck in. I'm sorry for not realizing sooner."
-            "I hope you'll forgive me and I hope you're okay."
-            "These strange water bubble monsters attacked me after you left and I'm really scared."
+            blue "Hey Micah, I know what I did earlier was terrible."
+            blue "I still don't really get everything that happened."
+            blue "I didn't realize so much time had passed and I genuinely did not hear you calling for me."
+            blue "It must have been a really dangerous situation to be stuck in. I'm sorry for not realizing sooner."
+            blue "I hope you'll forgive me and I hope you're okay."
+            blue "These strange water bubble monsters attacked me after you left and I'm really scared."
             "Sent."
             "Blue knew it could have done without the last line but it did feel better to get it out."
             "Water bubble monsters. Something that now exists."
@@ -33,7 +33,7 @@ label c2:
             blue "It was really an accident. If I knew you were in danger, I would have saved you. Promise!"
             micah "But you didn't! u know what? I'm too tired for this. Let's talk tmr."
             blue "kay. TTYL."
-            show blue upset at left with dissolve
+            show blue upset at left with fade
             blue "I hurt my best friend. I'm an awful person."
             blue "I'm so tired. I should head to bed."
             hide blue upset
@@ -51,25 +51,25 @@ label c2:
 
         "Beg Micah for forgiveness":
             hide blue confused
-            "You're my best friend Micah! I'm really sorry for what happened earlier."
-            "Please forgive me"
-            "Please"
-            "Please"
-            "IK I was an awful friend kay?"
-            "Just please forgive me?"
-            "Hey?"
-            "Hello?"
-            "Please answer Micah"
-            "Micah I'm crying. Please."
-            "I can't lose u"
-            "I promise I'll do anything to make it up to u"
-            "Please. I'll give you anything you want."
-            "You know what?"
-            "This silent treatment is bs"
-            "UR BS"
-            "I'VE BEEN UR FRIEND FOR SO LONG"
-            "BUT U CAN'T EVEN HEAR ME OUT ON ONE SIMPLE MISTAKE?"
-            "UR THE AWFUL FRIEND"
+            blue "You're my best friend Micah! I'm really sorry for what happened earlier."
+            blue "Please forgive me"
+            blue "Please"
+            blue "Please"
+            blue "IK I was an awful friend kay?"
+            blue "Just please forgive me?"
+            blue "Hey?"
+            blue "Hello?"
+            blue "Please answer Micah"
+            blue "Micah I'm crying. Please."
+            blue "I can't lose u"
+            blue "I promise I'll do anything to make it up to u"
+            blue "Please. I'll give you anything you want."
+            blue "You know what?"
+            blue "This silent treatment is bs"
+            blue "UR BS"
+            blue "I'VE BEEN UR FRIEND FOR SO LONG"
+            blue "BUT U CAN'T EVEN HEAR ME OUT ON ONE SIMPLE MISTAKE?"
+            blue "UR THE AWFUL FRIEND"
             "..."
             show blue upset
             "All the messages were sent and the only thing remaining was immense regret."

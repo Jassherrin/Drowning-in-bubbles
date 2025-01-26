@@ -3,10 +3,10 @@
     "The heat was sweltering. It was something no fan or air-con could fix."
     "Even the 'coldest' nights were warm enough to sweat through."
 
-    scene bg river with dissolve 
+    scene bg river with fade 
     "2.36pm. Two friends walking by a river."
 
-    show blue upset at left with dissolve
+    show blue upset at left with fade
     blue "This heat is too much."
     show micah neutral at right with moveinright
     micah "Yeah. The river looks refreshing though."
@@ -49,7 +49,7 @@
     "A few days later, the duo go to the swimming pool."
     "Blue is swimming alone while Micah is swimming with floaties."
 
-    "Blue is drifting away any thoughts and heat with swimming."
+    "Blue is pushing away any thoughts of heat with swimming."
     show blue swim h at left with moveinleft
 
     blue "This is the best!"
@@ -60,6 +60,8 @@
     micah "...Blue..."
     micah "...hey..."
     micah "...are you listening...?"
+    stop voice
+    play music "Sudden_Mystery.mp3" loop
     show micah swim e with moveinright
     micah "BLUE!"
     blue "Huh? what?"
@@ -92,9 +94,10 @@
             call waterMonFight
             if (blue_hp < 1):
                 jump game_over
-            blue "..."
-            blue "I should head home before more of those things appear."
-            jump c2
+            elif (blue_hp >0):
+                blue "..."
+                blue "I should head home before more of those things appear."
+                jump c2
 
 
     return

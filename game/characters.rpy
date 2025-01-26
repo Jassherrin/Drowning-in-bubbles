@@ -2,8 +2,8 @@
 # name of the character.
 define blue = Character("Blue", color="#00285f")
 define micah = Character("Micah", color="#700000")
-define q = Character("???", color="#c9c9c9")
-define aq = Character("???", color="#f2a654")
+define q = Character("Supervisor", color="#000000")
+define aq = Character("Collegue", color="#fb8200")
 
 #Blue 
 image blue neutral:
@@ -75,6 +75,9 @@ image micah swim e:
      "Micah swim enraged blink.png"
      pause 0.5
      repeat
+
+default bnm_hp = 200
+
 
 #Water Monster
 image waterMon = "Water monster.png"
