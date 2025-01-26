@@ -9,7 +9,7 @@ label wmFightMnB:
                     "Blue and Micah were attacked!"
                     $ wmHp = wmHp - 20
                     "Blue and Micah struck back!"
-                    show waterMon damaged 
+                    show waterMon tgth damaged 
                     "Water Monster's HP: [wmHp] \nBlue and Micah's HP: [bnm_hp]"
                     show waterMon
                 "Block and half attack":
@@ -23,7 +23,7 @@ label wmFightMnB:
                     show waterMon 
                 "Take a deep breath":
                     $ bnm_hp = bnm_hp + 20
-                    show waterMon light 
+                    show waterMon tgth light 
                     $ wmHp = wmHp - 10
                     "Water Monster's HP: [wmHp] \nBlue and Micah's HP: [bnm_hp] \n..."
                     "..."

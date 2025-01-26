@@ -85,8 +85,10 @@ image waterMon blocked = "Water monster blocked.png"
 image waterMon crit = "Water monster crit.png"
 image waterMon hit = "Water monster hit.png"
 image waterMon damaged = "Water monster damage.png"
+image waterMon tgth damaged = "Water monster tgth damage.png"
 image waterMon red = "Water monster small dmg.png"
 image waterMon light = "Water monster light dmg.png"
+image waterMon tgth light = "Water monster tgth light dmg.png"
 image waterMon dead:
      "Water monster d1.png"
      pause 0.5
