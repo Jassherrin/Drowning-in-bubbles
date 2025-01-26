@@ -2,7 +2,7 @@ label c5:
     stop voice
     play music "chill_day.mp3" loop
     scene bg micah room with fade 
-    show micah happy at left with fade
+    show micah sad at left with fade
     show blue neutral at right with moveinright
 
     micah "You sure they'll show?"
@@ -14,7 +14,7 @@ label c5:
     blue "It's here. Told you it was real."
     show micah happy
     micah "Unbelievable."
-    call wmFightMnB from _call_wmFightMnB
+    call wmFightMnB
     if (bnm_hp < 1):
         jump game_over
     
@@ -47,7 +47,7 @@ label c5:
     show waterMon at right with zoomin
     micah "Heh!"
     blue "We've fought many of these haha!"
-    call wmFightMnB from _call_wmFightMnB_1
+    call wmFightMnB
     if (bnm_hp < 1):
         jump game_over
     micah "The river is still pretty here."
@@ -56,22 +56,6 @@ label c5:
     blue "Better."
     micah "I'm happy for you."
     blue "Thanks."
-    micah "The bubble monsters are weird huh?"
-    blue "What do you mean?"
-    micah "Like why do we have to fight them?"
-    blue "No idea."
-    micah "Scary."
-    blue "I'm just glad I have you now to fight against them."
-    micah "Yeah, they aren't much of a threat when we're together."
-    blue "Which just means we have more of a reason to keep to our contract."
-    micah "Oh! You remember the contract?"
-    blue "Of course! We are binded for eternity!"
-    micah "..."
-    micah "Why am I surprised the cheesecake remembered the cheesy promise?"
-    blue "OI!"
-    micah "I'm glad too. That we're friends for 'eternity'."
-    show blue happy
-    pause 1.0
 
 
     scene bg starry night with fade 

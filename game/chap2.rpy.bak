@@ -7,7 +7,7 @@ label c2:
     "However..."
     show waterMon at right with zoomin
     blue "Not again!"
-    call waterMonFight from _call_waterMonFight
+    call waterMonFight
     if (blue_hp < 1):
         jump game_over
     blue "What is going on? I don't understand!"

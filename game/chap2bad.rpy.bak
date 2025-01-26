@@ -10,7 +10,7 @@ label c2bad:
     blue "..."
     blue "I don't deserve to have friends."
     show waterMon at right with zoomin
-    call waterMonFight from _call_waterMonFight_1
+    call waterMonFight
     if (blue_hp < 1):
         jump game_over
     "Blue checked the phone, but Micah had already blocked Blue's contact."

@@ -91,7 +91,7 @@
             blue "I don't understand..."
             show waterMon at right with zoomin
             blue "WHAT THE -?!!"
-            call waterMonFight from _call_waterMonFight_5
+            call waterMonFight
             if (blue_hp < 1):
                 jump game_over
             elif (blue_hp >0):

@@ -19,7 +19,7 @@ label c4:
     blue "Of course!"
 
     show waterMon at right with zoomin
-    call waterMonFight from _call_waterMonFight_2
+    call waterMonFight
     if (blue_hp < 1):
         jump game_over
     
@@ -59,7 +59,7 @@ label c4:
             blue "..."
             q "I'm not in a good mood right now. I'll let you know on a later date when to -"
             show waterMon at right with zoomin
-            call waterMonFight from _call_waterMonFight_3
+            call waterMonFight
             if (blue_hp < 1):
                 jump game_over
             show blue confused
@@ -80,7 +80,7 @@ label c4:
             blue "..."
             blue "I wish this river could wash all the bad stuff away..."
             show waterMon at right with zoomin
-            call waterMonFight from _call_waterMonFight_4
+            call waterMonFight
             if (blue_hp < 1):
                 jump game_over
             show micah upset at right with moveinright
@@ -147,7 +147,6 @@ label c4:
             show blue neutral
 
             blue "You're too sweet for me sometimes."
-            show micah happy
             micah "So are you, cheesecake."
 
 
